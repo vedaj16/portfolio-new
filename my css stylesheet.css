@@ -1,0 +1,198 @@
+/* * {
+    border: 1px solid hotpink !important;
+} */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #666856;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+/* RESPONSIVE */
+
+.container {
+  max-width: 1115px;
+  margin: 0 auto;
+  /*
+	padding-right: 15px;
+	padding-left: 15px; */
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /*
+    margin-right: -15px;
+    margin-left: -15px; */
+}
+
+.port-folio {
+  width: 33.33%;
+  text-align: center;
+}
+
+.col-6{
+  width: 50%
+}
+.head-image {
+  width: 100%;
+}
+
+.port-folio,
+.header
+
+,
+.head-image {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* UGLY MESSY STYLING CODE*/
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #666856;
+}
+
+a:hover {
+  color: black;
+}
+
+h1,
+h3 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  }
+
+h1 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
+.separator {
+  height: 5px;
+  background-color: #BCBBBB;
+  margin: 20px 0;
+}
+
+.logo {
+  padding-top: 20px;
+  float: left;
+
+}
+
+.imgmargins {
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+.text-right {
+  text-align: right;
+
+}
+
+
+.text-center {
+  text-align: center;
+
+}
+
+.text-attention {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.text-name {
+  font-size: 70px;
+  font-weight: 100;
+}
+
+.feature {
+  color: #BCBBBB;
+  font-size: 45px;
+  padding-left: 10px;
+  margin-top: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1115px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .text-name {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 750px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .port-folio,
+  .header {
+    width: 100%;
+  }
+  .middle{
+    text-align: center;
+  }
+  .logo{
+    position:center;
+  }
+  .separator {
+    height: 2px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .text-name {
+    font-size: 35px;
+  }
+  .middle{
+    text-align: center;
+  }
+  .logo{
+    text-align: center;
+  }
+
+  .port-folio{
+    width:25%}
+  .feature {
+    font-size: 40px;
+  }
+}
